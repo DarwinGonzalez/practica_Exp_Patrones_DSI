@@ -86,6 +86,15 @@
                     <label for="inputNombre" class="col-lg-2 control-label">Nombre</label>
                     <div class="col-lg-10">
                       <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduzca nombre" required>
+                      <script type="text/javascript">
+                          var m = document.getElementById("nombre").value;
+                          var expreg = /^[a-zA-Z ]*$/;
+                          
+                          if(expreg.test(m))
+                        	  console.log("Nombre introducido correctamente");
+                          else 
+                            alert("¡Formato de nombre incorrecto, sólo debe contener letras!"); 
+                      </script>
                     </div>
                     <label for="inputDirector" class="col-lg-2 control-label">Director</label>
                     <div class="col-lg-10">
