@@ -85,16 +85,7 @@
                   <div class="form-group">
                     <label for="inputNombre" class="col-lg-2 control-label">Nombre</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduzca nombre" required>
-                      <script type="text/javascript">
-                          var m = document.getElementById("nombre").value;
-                          var expreg = /^[a-zA-Z ]*$/;
-                          
-                          if(expreg.test(m))
-                        	  console.log("Nombre introducido correctamente");
-                          else 
-                            alert("¡Formato de nombre incorrecto, sólo debe contener letras!"); 
-                      </script>
+                      <input type="text" class="form-control" name="nombre" id="nombre" pattern="^[a-zA-Z ]*$" title="Introduzca sólo letras" placeholder="Introduzca nombre" required>
                     </div>
                     <label for="inputDirector" class="col-lg-2 control-label">Director</label>
                     <div class="col-lg-10">
@@ -104,9 +95,9 @@
                     <div class="col-lg-10">
                       <input type="text" class="form-control" name="genero" id="genero" placeholder="Introduzca genero" required>
                     </div>
-                    <label for="inputPuntuacion" class="col-lg-2 control-label">Puntuación</label>
+                    <label for="inputPuntuacion" class="col-lg-2 control-label">Puntuación</label>  
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" name="puntuacion" id="puntuacion" placeholder="Introduzca puntuacion" required>
+                      <input type="text" class="form-control" name="puntuacion" id="puntuacion" pattern="^(?:[1-9]|0[1-9]|10)$" title="Introduzca un dígito del 1 al 10" placeholder="Introduzca puntuacion" required>
                     </div>
                     <label for="inputEstreno" class="col-lg-2 control-label">Estreno</label>
                     <div class="col-lg-10">
