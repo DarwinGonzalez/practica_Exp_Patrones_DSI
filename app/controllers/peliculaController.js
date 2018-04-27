@@ -6,13 +6,8 @@ async function main(req, res) {
     res.render('pelicula', { peliculas: peliculas })
 }
 
-function crearPelicula(req,res){
-
-	return new Pelicula({ 'nombre': req.body.nombre, 'director': req.body.director, 'genero': req.body.genero, 'puntuacion': req.body.puntuacion, 'estreno': req.body.estreno, 'duracion': req.body.duracion });
-}
-
 async function getPelicula(req, res) {
-    const pelicula = crearPelicula(req,res); 
+    const pelicula = new Pelicula({ 'nombre': req.body.nombre, 'director': req.body.director, 'genero': req.body.genero, 'puntuacion': req.body.puntuacion, 'estreno': req.body.estreno, 'duracion': req.body.duracion })
     let result = await Pelicula.findOne({'nombre': req.body.nombre})
     if (result) throw new Error('Pelicula ya existe')
     pelicula.save()
