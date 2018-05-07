@@ -1,4 +1,4 @@
-# Prácticade Expresiones regulares y Patrones de Diseño
+# Práctica de Expresiones regulares y Patrones de Diseño
 Práctica de laboratorio DSI en la que se han de realizar dos tareas:
 
 1. Incluid en el proyecto el uso de al menos una expresión regular
