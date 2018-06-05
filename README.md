@@ -13,3 +13,11 @@ En cuento a las expresiones regulares se han añadido dos. En primer lugar una q
 Por otra parte se ha añadido una expresión regular para controlar que la puntuación solo pueda ser del 1 al 10:
 
 ![captura2](https://github.com/DarwinGonzalez/practica_Exp_Patrones_DSI/blob/master/public/img/Captura%20de%20pantalla%202018-04-27%20a%20las%2016.29.11.png?raw=true)
+
+
+Patrones de diseño que han sido identificados hasta el momento son los siguientes:
+
+1. Patrón Iterator (Archivo: /app/controllers/peliculaController.js)
+2. Patrón Builder Design (Archivo: /app/models/pelicula.js)
+3. Patrón Singleton (Archivo: index.js)
+4. Patrón Factory (Archivo: /app/controllers/peliculaController.js)
