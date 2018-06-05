@@ -7,9 +7,11 @@ import session    from 'express-session'
 import api        from './config/routes'
 import mongoose   from 'mongoose'
 
-
+//------ Begin Patrón Singleton -----
 const app = express()
-
+//------ End Patrón Singleton -----
+/* APP: una clase tenga solo una 
+instancia y proporcione un punto de acceso global a ella.*/
 
 mongoose.connect('mongodb://localhost/pelicula')
 
