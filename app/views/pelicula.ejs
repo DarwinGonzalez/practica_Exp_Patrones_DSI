@@ -85,6 +85,7 @@
                   <div class="form-group">
                     <label for="inputNombre" class="col-lg-2 control-label">Nombre</label>
                     <div class="col-lg-10">
+                      <!-- Expresión regular solo acepta letras -->
                       <input type="text" class="form-control" name="nombre" id="nombre" pattern="^[a-zA-Z ]*$" title="Introduzca sólo letras" placeholder="Introduzca nombre" required>
                     </div>
                     <label for="inputDirector" class="col-lg-2 control-label">Director</label>
@@ -97,6 +98,7 @@
                     </div>
                     <label for="inputPuntuacion" class="col-lg-2 control-label">Puntuación</label>  
                     <div class="col-lg-10">
+                      <!-- Expresión regular solo acepta numeros del 1 al 10 -->
                       <input type="text" class="form-control" name="puntuacion" id="puntuacion" pattern="^(?:[1-9]|0[1-9]|10)$" title="Introduzca un dígito del 1 al 10" placeholder="Introduzca puntuacion" required>
                     </div>
                     <label for="inputEstreno" class="col-lg-2 control-label">Estreno</label>
