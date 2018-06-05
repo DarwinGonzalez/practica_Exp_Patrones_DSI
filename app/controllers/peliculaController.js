@@ -14,10 +14,13 @@ function crearPelicula(req,res){
 
 async function getPelicula(req, res) {
     const pelicula = crearPelicula(req,res); 
+    // ------------------ Begin Patrón Iterator --------------------
     let result = await Pelicula.findOne({'nombre': req.body.nombre})
     if (result) throw new Error('Pelicula ya existe')
     pelicula.save()
-
+    // ------------------ End Patrón Iterator --------------------
+    /* FINDONE : Proporcione una forma de acceder a los elementos de un objeto agregado 
+    secuencialmente sin exponer su representación subyacente. */
     res.redirect('/pelicula')
 }
 
